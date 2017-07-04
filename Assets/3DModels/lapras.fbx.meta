@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: 22cccdd363e9b472b834e2caa67fdd6b
+timeCreated: 1499198863
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BR_Lapras:Mesh
+    100002: //RootNode
+    100004: QuickRigCharacter_Head
+    100006: QuickRigCharacter_Hips
+    100008: QuickRigCharacter_LeftArm
+    100010: QuickRigCharacter_LeftForeArm
+    100012: QuickRigCharacter_LeftHand
+    100014: QuickRigCharacter_LeftLeg
+    100016: QuickRigCharacter_LeftShoulder
+    100018: QuickRigCharacter_LeftUpLeg
+    100020: QuickRigCharacter_Neck
+    100022: QuickRigCharacter_Reference
+    100024: QuickRigCharacter_RightArm
+    100026: QuickRigCharacter_RightForeArm
+    100028: QuickRigCharacter_RightHand
+    100030: QuickRigCharacter_RightLeg
+    100032: QuickRigCharacter_RightShoulder
+    100034: QuickRigCharacter_RightUpLeg
+    100036: QuickRigCharacter_Spine
+    100038: QuickRigCharacter_Spine1
+    100040: QuickRigCharacter_Spine2
+    400000: BR_Lapras:Mesh
+    400002: //RootNode
+    400004: QuickRigCharacter_Head
+    400006: QuickRigCharacter_Hips
+    400008: QuickRigCharacter_LeftArm
+    400010: QuickRigCharacter_LeftForeArm
+    400012: QuickRigCharacter_LeftHand
+    400014: QuickRigCharacter_LeftLeg
+    400016: QuickRigCharacter_LeftShoulder
+    400018: QuickRigCharacter_LeftUpLeg
+    400020: QuickRigCharacter_Neck
+    400022: QuickRigCharacter_Reference
+    400024: QuickRigCharacter_RightArm
+    400026: QuickRigCharacter_RightForeArm
+    400028: QuickRigCharacter_RightHand
+    400030: QuickRigCharacter_RightLeg
+    400032: QuickRigCharacter_RightShoulder
+    400034: QuickRigCharacter_RightUpLeg
+    400036: QuickRigCharacter_Spine
+    400038: QuickRigCharacter_Spine1
+    400040: QuickRigCharacter_Spine2
+    4300000: BR_Lapras:Mesh
+    9500000: //RootNode
+    13700000: BR_Lapras:Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
