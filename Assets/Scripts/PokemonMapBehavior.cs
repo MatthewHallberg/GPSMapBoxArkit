@@ -22,8 +22,10 @@ public class PokemonMapBehavior : MonoBehaviour {
 		logo.transform.eulerAngles += new Vector3 (0, 1, 0);
 
 		if (Vector3.Distance (this.transform.position, player.position) < 4) {
-
-			print ("OPEN NEW SCENE");
+			//load scene using name of gameobject
+			string name = gameObject.name;
+			SceneService.Instance.LoadARScene(name.Substring(0,name.Length-10));
+			Destroy (gameObject);
 		}
 	}
 }

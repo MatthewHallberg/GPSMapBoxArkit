@@ -2,12 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs">
     <Files>
-      <File FileName="Assets/TestPosition.cs" Line="44" Column="1" />
-      <File FileName="Assets/Mapbox/Unity/Map/AbstractMap.cs" Line="15" Column="63" />
-      <File FileName="Assets/Mapbox/Examples/LocationProvider/Scripts/PositionWithLocationProvider.cs" Line="77" Column="65" />
-      <File FileName="Assets/Mapbox/Unity/Location/ILocationProvider.cs" Line="26" Column="9" />
-      <File FileName="Assets/Mapbox/Examples/LocationProvider/Scripts/RotateWithLocationProvider.cs" Line="70" Column="3" />
-      <File FileName="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" Line="130" Column="1" />
+      <File FileName="Assets/Scripts/PokemonFactory.cs" Line="31" Column="64" />
+      <File FileName="Assets/Scripts/PokemonMapBehavior.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/SceneService.cs" Line="39" Column="45" />
+      <File FileName="Assets/Scripts/ARPokemonControl.cs" Line="22" Column="44" />
+      <File FileName="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" Line="127" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

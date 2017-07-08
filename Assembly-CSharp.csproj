@@ -328,10 +328,11 @@
      <Compile Include="Assets\Mapbox\Unity\Utilities\Singleton.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\TelemetryConfigurationButton.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
+     <Compile Include="Assets\Scripts\ARPokemonControl.cs" />
      <Compile Include="Assets\Scripts\ParticlePainter.cs" />
      <Compile Include="Assets\Scripts\PokemonFactory.cs" />
      <Compile Include="Assets\Scripts\PokemonMapBehavior.cs" />
-     <Compile Include="Assets\Scripts\TestPosition.cs" />
+     <Compile Include="Assets\Scripts\SceneService.cs" />
      <Compile Include="Assets\Scripts\UnityARAmbient.cs" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\Mapbox\README.txt" />
