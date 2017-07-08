@@ -7,6 +7,12 @@ namespace Mapbox.Examples.LocationProvider
 
 	public class PositionWithLocationProvider : MonoBehaviour
 	{
+
+		public Animation trainerAnim;
+		public Transform trainer;
+		public PokemonFactory pokemonFactory;
+		private bool pokemonGenerated = false;
+
 		[SerializeField]
 		private AbstractMap _map;
 
@@ -77,12 +83,29 @@ namespace Mapbox.Examples.LocationProvider
 				_targetPosition = Conversions.GeoToWorldPosition(e.Location,
 																 _map.CenterMercator,
 																 _map.WorldRelativeScale).ToVector3xz();
+				if (!pokemonGenerated) {
+					pokemonGenerated = true;
+					pokemonFactory.PlacePokemon (e.Location);
+				}
 			}
 		}
 
 		void Update()
 		{
-			transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _positionFollowFactor);
+			if (Vector3.Distance (transform.position, _targetPosition) > 1f) {
+				transform.position = Vector3.Lerp (transform.position, _targetPosition, Time.deltaTime * _positionFollowFactor);
+				trainer.LookAt (_targetPosition);
+
+				if (!trainerAnim.isPlaying) {
+					trainerAnim.Play ();
+				}
+
+			} else {
+				transform.position = _targetPosition;
+				if (trainerAnim.isPlaying) {
+					trainerAnim.Stop ();
+				}
+			}
 		}
 	}
 }

@@ -21,3 +21,5 @@
 /Users/matthew/Desktop/GPSMapBoxArkit/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/matthew/Desktop/GPSMapBoxArkit/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/matthew/Desktop/GPSMapBoxArkit/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/matthew/Desktop/GPSMapBoxArkit/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/matthew/Desktop/GPSMapBoxArkit/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb

@@ -12,7 +12,7 @@
 	{
 		[Geocode]
 		[SerializeField]
-		private string _latitudeLongitudeString = "40.4417, -79.9901";
+		string _latitudeLongitudeString;
 
 		[SerializeField]
 		int _zoom;
