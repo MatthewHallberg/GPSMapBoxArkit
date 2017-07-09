@@ -21,11 +21,21 @@ public class PokemonMapBehavior : MonoBehaviour {
 		transform.eulerAngles = new Vector3 (0, transform.eulerAngles.y, 0);
 		logo.transform.eulerAngles += new Vector3 (0, 1, 0);
 
+		/*
+		 * 
+		 * 
+		 * selects pokemon if we are close enough decided to remove for testing
 		if (Vector3.Distance (this.transform.position, player.position) < 4) {
-			//load scene using name of gameobject
+			//load scene and set current pokemon so we can place in front of user
 			string name = gameObject.name;
-			SceneService.Instance.LoadARScene(name.Substring(0,name.Length-10));
+			PokeObjectManager.Instance.currentPokemon = name.Substring(0,name.Length-10);
+			SceneService.Instance.LoadARScene();
+
 			Destroy (gameObject);
 		}
+		*
+		*
+		*
+		*/
 	}
 }

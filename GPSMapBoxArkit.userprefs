@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ARPokemonControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/PokemonFactory.cs" Line="31" Column="64" />
-      <File FileName="Assets/Scripts/PokemonMapBehavior.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/SceneService.cs" Line="39" Column="45" />
-      <File FileName="Assets/Scripts/ARPokemonControl.cs" Line="22" Column="44" />
-      <File FileName="Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" Line="127" Column="38" />
+      <File FileName="Assets/Scripts/ARPokemonControl.cs" Line="19" Column="27" />
+      <File FileName="Assets/Scripts/PokeObjectManager.cs" Line="9" Column="75" />
+      <File FileName="Assets/Scripts/TouchControl.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/PokemonFactory.cs" Line="39" Column="104" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

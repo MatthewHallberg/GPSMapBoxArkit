@@ -19,20 +19,30 @@
 		private AbstractMap _map;
 		[SerializeField]
 		public Transform player;
-		//list contains all pokemon with animations for catching (right now only Mewtwo and Pikachu)
+		//list contains all pokemon map objects that can show up in AR
 		[Header ("Spawnable Pokemon")]
-		public List<GameObject> pokemonList = new List<GameObject> ();
+		public List<GameObject> pokemonMapObjects = new List<GameObject> ();
 
 		public void PlacePokemon(Mapbox.Utils.Vector2d initialLocation){
 
 			//loop through all pokemon instantiate at location
-			foreach(GameObject pokemon in pokemonList){
+			foreach(GameObject pokemon in pokemonMapObjects){
 
-				float randomLat = UnityEngine.Random.Range (-.001f, .001f);
-				float randomLong = UnityEngine.Random.Range (-.001f, .001f);
+				float randomLat = UnityEngine.Random.Range (-.002f, .002f);
+				float randomLong = UnityEngine.Random.Range (-.002f, .002f);
 
-				//create new random location
+				//create new random location close to users initial location
 				Mapbox.Utils.Vector2d pokemonLocation = new Mapbox.Utils.Vector2d (initialLocation.x + randomLat, initialLocation.y + randomLong);
+
+				/*test to see if real world distance matches unity distance...It does not unfortunately. Tested with an online distance 
+				 * calculator and it was off by a different factor each time. To get accurate distances in AR scene it could be possible by placing 
+				 * objects based on gps distance relative to player assuming one unity scene unit to be one meter. 
+				if (pokemon.name.Contains ("mewtwo")) {
+					print (pokemon.name + ": " + pokemonLocation);
+					GameObject player = GameObject.Find ("Player");
+					print("Unity Distance: " + Vector3.Distance(pokemon.transform.position,player.transform.position));
+				}
+				*/
 
 				//calculate map location 
 				Vector3 _targetPosition = Conversions.GeoToWorldPosition (pokemonLocation,
@@ -42,6 +52,10 @@
 				GameObject currentPokemon = Instantiate (pokemon);
 				//position POI on map
 				currentPokemon.transform.position = _targetPosition;
+				//get name so we can write to dictionary
+				string currentPokemonName = currentPokemon.name.Substring(0,currentPokemon.name.Length-10);
+				//add pokemon map object to poke object manager that holds all transforms and persists between scenes so we can attempt to accuratly place pokemon and gyms in AR scene.
+				PokeObjectManager.Instance.pokeObjects.Add(currentPokemonName,currentPokemon.transform);
 			}
 		}
 	}

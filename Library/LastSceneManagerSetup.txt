@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ARScene.unity
+- path: Assets/MapboxScene.unity
   isLoaded: 1
   isActive: 1

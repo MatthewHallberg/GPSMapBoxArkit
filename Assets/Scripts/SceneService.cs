@@ -11,8 +11,6 @@ public class SceneService : MonoBehaviour {
 		get { return instance; }
 	}
 
-	public static string currentPokemon;
-
 	void Awake () {
 		if (instance == null)
 			instance = this;
@@ -39,9 +37,8 @@ public class SceneService : MonoBehaviour {
 		SceneManager.UnloadSceneAsync ("ARScene");
 	}
 
-	public void LoadARScene(string pokemonName){
+	public void LoadARScene(){
 
-		currentPokemon = pokemonName;
 		Scene oldScene = SceneManager.GetActiveScene ();
 
 		SceneManager.LoadScene("ARScene", LoadSceneMode.Additive);
