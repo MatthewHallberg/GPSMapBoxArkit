@@ -18,7 +18,7 @@ namespace UnityEngine.XR.iOS
         {
             unityARAnchorManager.Destroy ();
         }
-
+/*
         void OnGUI()
         {
             List<ARPlaneAnchorGameObject> arpags = unityARAnchorManager.GetCurrentPlaneAnchors ();
@@ -28,6 +28,7 @@ namespace UnityEngine.XR.iOS
                 //GUI.Box(new Rect(100, 200, 800, 60), string.Format ("Extent: x:{0}, y:{1}, z:{2}", ap.extent.x, ap.extent.y, ap.extent.z));
             }
         }
+*/
 	}
 }
 

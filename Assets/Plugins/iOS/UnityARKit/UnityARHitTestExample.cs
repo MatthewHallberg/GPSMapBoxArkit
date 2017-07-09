@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace UnityEngine.XR.iOS
@@ -14,13 +15,21 @@ namespace UnityEngine.XR.iOS
                 foreach (var hitResult in hitResults) {
                     Debug.Log ("Got hit!");
                     m_HitTransform.position = UnityARMatrixOps.GetPosition (hitResult.worldTransform);
-                    m_HitTransform.rotation = UnityARMatrixOps.GetRotation (hitResult.worldTransform);
+					m_HitTransform.position = new Vector3 (0, m_HitTransform.position.y, 0);
+ //                   m_HitTransform.rotation = UnityARMatrixOps.GetRotation (hitResult.worldTransform);
                     Debug.Log (string.Format ("x:{0:0.######} y:{1:0.######} z:{2:0.######}", m_HitTransform.position.x, m_HitTransform.position.y, m_HitTransform.position.z));
                     return true;
                 }
             }
             return false;
         }
+
+
+		IEnumerator UpdateGroundPlane(){
+
+
+			yield return new WaitForSeconds (2f);
+		}
 		
 		// Update is called once per frame
 		void Update () {
@@ -39,9 +48,9 @@ namespace UnityEngine.XR.iOS
                     ARHitTestResultType[] resultTypes = {
                         ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
                         // if you want to use infinite planes use this:
-                        //ARHitTestResultType.ARHitTestResultTypeExistingPlane,
+                        ARHitTestResultType.ARHitTestResultTypeExistingPlane,
                         ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
-                        ARHitTestResultType.ARHitTestResultTypeFeaturePoint
+                        //ARHitTestResultType.ARHitTestResultTypeFeaturePoint
                     }; 
 					
                     foreach (ARHitTestResultType resultType in resultTypes)

@@ -28,8 +28,8 @@
 			//loop through all pokemon instantiate at location
 			foreach(GameObject pokemon in pokemonMapObjects){
 
-				float randomLat = UnityEngine.Random.Range (-.002f, .002f);
-				float randomLong = UnityEngine.Random.Range (-.002f, .002f);
+				float randomLat = UnityEngine.Random.Range (-.001f, .001f);
+				float randomLong = UnityEngine.Random.Range (-.001f, .001f);
 
 				//create new random location close to users initial location
 				Mapbox.Utils.Vector2d pokemonLocation = new Mapbox.Utils.Vector2d (initialLocation.x + randomLat, initialLocation.y + randomLong);
