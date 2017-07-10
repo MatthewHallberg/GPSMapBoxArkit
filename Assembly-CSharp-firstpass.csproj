@@ -121,6 +121,8 @@
      <Compile Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <None Include="Assets\LightningBolt\Readme.txt" />
+     <None Include="Assets\Scripts\ShadowShader.shader" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\Mapbox\README.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />

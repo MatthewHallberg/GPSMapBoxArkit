@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\HSVPicker\Editor\BoxSliderEditor.cs" />
+     <Compile Include="Assets\LightningBolt\Editor\LightningBoltEditor.cs" />
      <Compile Include="Assets\Mapbox\Unity\Editor\Build\Mapbox_iOS_build.cs" />
      <Compile Include="Assets\Mapbox\Unity\Editor\FactoryEditor.cs" />
      <Compile Include="Assets\Mapbox\Unity\Editor\FlatTerrainFactoryEditor.cs" />
@@ -57,6 +58,8 @@
      <Compile Include="Assets\Mapbox\Unity\Editor\MapboxConfigurationWindow.cs" />
      <Compile Include="Assets\Mapbox\Unity\Editor\MeshFactoryEditor.cs" />
      <Compile Include="Assets\Mapbox\Unity\Editor\TerrainFactoryEditor.cs" />
+     <None Include="Assets\LightningBolt\Readme.txt" />
+     <None Include="Assets\Scripts\ShadowShader.shader" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\Mapbox\README.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />

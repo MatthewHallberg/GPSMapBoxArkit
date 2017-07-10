@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <None Include="Assets\LightningBolt\Readme.txt" />
+     <None Include="Assets\Scripts\ShadowShader.shader" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\Mapbox\README.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />

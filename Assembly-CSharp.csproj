@@ -61,6 +61,7 @@
      <Compile Include="Assets\HSVPicker\UI\SVBoxSlider.cs" />
      <Compile Include="Assets\HSVPicker\UtilityScripts\BoxSlider.cs" />
      <Compile Include="Assets\HSVPicker\UtilityScripts\HSVUtil.cs" />
+     <Compile Include="Assets\LightningBolt\LightningBoltScript.cs" />
      <Compile Include="Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\ExtensionMethods\Enums.cs" />
      <Compile Include="Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\ExtensionMethods\VectorTile.cs" />
      <Compile Include="Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\ExtensionMethods\VectorTileFeature.cs" />
@@ -330,12 +331,17 @@
      <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
      <Compile Include="Assets\Scripts\ARPokemonControl.cs" />
      <Compile Include="Assets\Scripts\AnchorBehavior.cs" />
+     <Compile Include="Assets\Scripts\CharizardBehavior.cs" />
+     <Compile Include="Assets\Scripts\LaprasBehavior.cs" />
+     <Compile Include="Assets\Scripts\PikachuBehavior.cs" />
      <Compile Include="Assets\Scripts\PokeObjectManager.cs" />
      <Compile Include="Assets\Scripts\PokemonFactory.cs" />
      <Compile Include="Assets\Scripts\PokemonMapBehavior.cs" />
      <Compile Include="Assets\Scripts\SceneService.cs" />
      <Compile Include="Assets\Scripts\TouchControl.cs" />
      <Compile Include="Assets\Scripts\UnityARAmbient.cs" />
+     <None Include="Assets\LightningBolt\Readme.txt" />
+     <None Include="Assets\Scripts\ShadowShader.shader" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\Mapbox\README.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
