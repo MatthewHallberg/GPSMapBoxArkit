@@ -18,8 +18,10 @@ public class TouchControl : MonoBehaviour {
 			if (Physics.Raycast (ray, out hit)) {
 				if (hit.collider.gameObject.tag == "MapObject") {
 					//load scene and set current pokemon
-					string name =hit.collider.gameObject.name;
+					string name = hit.collider.gameObject.name;
 					PokeObjectManager.Instance.currentPokemon = name.Substring(0,name.Length-10);
+					//remove gameobject from map
+					Destroy(hit.collider.gameObject);
 					SceneService.Instance.LoadARScene();
 				}
 			}

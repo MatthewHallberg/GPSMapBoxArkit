@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace UnityEngine.XR.iOS
 {
@@ -15,29 +16,25 @@ namespace UnityEngine.XR.iOS
                 foreach (var hitResult in hitResults) {
                     Debug.Log ("Got hit!");
                     m_HitTransform.position = UnityARMatrixOps.GetPosition (hitResult.worldTransform);
-					m_HitTransform.position = new Vector3 (0, m_HitTransform.position.y, 0);
- //                   m_HitTransform.rotation = UnityARMatrixOps.GetRotation (hitResult.worldTransform);
+                    m_HitTransform.rotation = UnityARMatrixOps.GetRotation (hitResult.worldTransform);
                     Debug.Log (string.Format ("x:{0:0.######} y:{1:0.######} z:{2:0.######}", m_HitTransform.position.x, m_HitTransform.position.y, m_HitTransform.position.z));
                     return true;
                 }
             }
             return false;
         }
-
-
-		IEnumerator UpdateGroundPlane(){
-
-
-			yield return new WaitForSeconds (2f);
-		}
 		
 		// Update is called once per frame
 		void Update () {
 			if (Input.touchCount > 0 && m_HitTransform != null)
 			{
 				var touch = Input.GetTouch(0);
-				if (touch.phase == TouchPhase.Began)
+				if (touch.phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(0))
 				{
+					if (transform.GetChild (0) != null) {
+						transform.GetChild (0).localPosition = Vector3.zero;
+					}
+
 					var screenPosition = Camera.main.ScreenToViewportPoint(touch.position);
 					ARPoint point = new ARPoint {
 						x = screenPosition.x,
@@ -48,9 +45,9 @@ namespace UnityEngine.XR.iOS
                     ARHitTestResultType[] resultTypes = {
                         ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
                         // if you want to use infinite planes use this:
-                        ARHitTestResultType.ARHitTestResultTypeExistingPlane,
+                        //ARHitTestResultType.ARHitTestResultTypeExistingPlane,
                         ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
-                        //ARHitTestResultType.ARHitTestResultTypeFeaturePoint
+                        ARHitTestResultType.ARHitTestResultTypeFeaturePoint
                     }; 
 					
                     foreach (ARHitTestResultType resultType in resultTypes)

@@ -330,8 +330,8 @@
      <Compile Include="Assets\Mapbox\Unity\Utilities\TelemetryConfigurationButton.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
      <Compile Include="Assets\Scripts\ARPokemonControl.cs" />
-     <Compile Include="Assets\Scripts\AnchorBehavior.cs" />
      <Compile Include="Assets\Scripts\CharizardBehavior.cs" />
+     <Compile Include="Assets\Scripts\GymBehavior.cs" />
      <Compile Include="Assets\Scripts\LaprasBehavior.cs" />
      <Compile Include="Assets\Scripts\PikachuBehavior.cs" />
      <Compile Include="Assets\Scripts\PokeObjectManager.cs" />

@@ -52,10 +52,6 @@
 				GameObject currentPokemon = Instantiate (pokemon);
 				//position POI on map
 				currentPokemon.transform.position = _targetPosition;
-				//get name so we can write to dictionary
-				string currentPokemonName = currentPokemon.name.Substring(0,currentPokemon.name.Length-10);
-				//add pokemon map object to poke object manager that holds all transforms and persists between scenes so we can attempt to accuratly place pokemon and gyms in AR scene.
-				PokeObjectManager.Instance.pokeObjects.Add(currentPokemonName,currentPokemon.transform);
 			}
 		}
 	}

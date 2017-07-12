@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class PokeObjectManager : MonoBehaviour {
 
+	/// <summary>
+	/// This instance persists between scenes, originally it had a list that held all nearby objects
+	/// because I was placing them all at once in relation to the players position and their gps location (in the AR scene)
+	/// but I was never happy with the results because when you place virtual objects far away they don't get occluded by trees 
+	/// and what not, so that funtionality was abandoned. 
+	/// </summary>
+
 	public string currentPokemon; //holds selectd pokemon from touch control or closest pokemon from pokemon map behavior
-	public Transform player;
-	public Dictionary <string,Transform> pokeObjects = new Dictionary<string,Transform> ();//holds all pokemon and gyms currently on the map (although nothing exists to remove them yet when they are too far away)
 
 	private static PokeObjectManager instance;
 	public static PokeObjectManager Instance
