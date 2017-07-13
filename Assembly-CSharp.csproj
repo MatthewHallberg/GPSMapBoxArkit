@@ -333,6 +333,7 @@
      <Compile Include="Assets\Scripts\CharizardBehavior.cs" />
      <Compile Include="Assets\Scripts\GymBehavior.cs" />
      <Compile Include="Assets\Scripts\LaprasBehavior.cs" />
+     <Compile Include="Assets\Scripts\MewtwoBehavior.cs" />
      <Compile Include="Assets\Scripts\PikachuBehavior.cs" />
      <Compile Include="Assets\Scripts\PokeObjectManager.cs" />
      <Compile Include="Assets\Scripts\PokemonFactory.cs" />
