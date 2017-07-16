@@ -11,7 +11,6 @@ public class MewtwoBehavior : MonoBehaviour {
 	public Animation mewAnim;
 
 
-	public GameObject shadow;
 	public GameObject particles;
 
 	private bool shouldMove = false;
@@ -39,20 +38,20 @@ public class MewtwoBehavior : MonoBehaviour {
 			mewAnim.clip = up;
 			mewAnim.Play ();
 			desiredPosition = new Vector3 (0, 15, 0);
-			shadow.SetActive (false);
 			particles.SetActive (true);
 			shouldMove = true;
+			GetComponent<AudioSource> ().Play ();
 			yield return new WaitForSeconds (8f);
 			mewAnim.Stop ();
 			mewAnim.clip = down;
 			mewAnim.Play ();
 			desiredPosition = Vector3.zero;
 			yield return new WaitForSeconds (2f);
+			GetComponent<AudioSource> ().Stop ();
 			mewAnim.Stop ();
 			mewAnim.clip = idle;
 			mewAnim.Play ();
 			particles.SetActive (false);
-			shadow.SetActive (true);
 		}
 	}
 }

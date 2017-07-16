@@ -28,8 +28,11 @@
 			//loop through all pokemon instantiate at location
 			foreach(GameObject pokemon in pokemonMapObjects){
 
-				float randomLat = UnityEngine.Random.Range (-.0002f, .0002f);
-				float randomLong = UnityEngine.Random.Range (-.0002f, .0002f);
+				//float randomLat = UnityEngine.Random.Range (-.0002f, .0002f);
+				//float randomLong = UnityEngine.Random.Range (-.0002f, .0002f);
+
+				float randomLat = UnityEngine.Random.Range (-.001f, .001f);
+				float randomLong = UnityEngine.Random.Range (-.001f, .001f);
 
 				//create new random location close to users initial location
 				Mapbox.Utils.Vector2d pokemonLocation = new Mapbox.Utils.Vector2d (initialLocation.x + randomLat, initialLocation.y + randomLong);
@@ -52,6 +55,11 @@
 				GameObject currentPokemon = Instantiate (pokemon);
 				//position POI on map
 				currentPokemon.transform.position = _targetPosition;
+				currentPokemon.transform.position = _targetPosition;
+				//get name so we can write to dictionary
+				string currentPokemonName = currentPokemon.name.Substring(0,currentPokemon.name.Length-10);
+				//add pokemon map object to poke object manager that holds all transforms and persists between scenes so we can attempt to accuratly place pokemon and gyms in AR scene.
+				PokeObjectManager.Instance.pokeObjects.Add(currentPokemonName,currentPokemon.transform);
 			}
 		}
 	}

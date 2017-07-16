@@ -9,7 +9,9 @@ public class TouchControl : MonoBehaviour {
 	/// (which I decided not to use but it was going to spawn right in front of them) currently all Pokemon 
 	/// get placed relative to the player so that their real world locations simulate their gps locations.
 	/// </summary>
-	
+
+	public Transform player;	
+
 	void Update () {
 
 		if (Input.GetMouseButtonDown (0)) {
@@ -20,8 +22,7 @@ public class TouchControl : MonoBehaviour {
 					//load scene and set current pokemon
 					string name = hit.collider.gameObject.name;
 					PokeObjectManager.Instance.currentPokemon = name.Substring(0,name.Length-10);
-					//remove gameobject from map
-					Destroy(hit.collider.gameObject);
+					PokeObjectManager.Instance.player = player;
 					SceneService.Instance.LoadARScene();
 				}
 			}

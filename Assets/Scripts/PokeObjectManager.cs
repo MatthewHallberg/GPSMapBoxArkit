@@ -11,7 +11,9 @@ public class PokeObjectManager : MonoBehaviour {
 	/// and what not, so that funtionality was abandoned. 
 	/// </summary>
 
+	public Transform player;
 	public string currentPokemon; //holds selectd pokemon from touch control or closest pokemon from pokemon map behavior
+	public Dictionary <string,Transform> pokeObjects = new Dictionary<string,Transform> ();//holds all pokemon and gyms currently on the map (although nothing exists to remove them yet when they are too far away)
 
 	private static PokeObjectManager instance;
 	public static PokeObjectManager Instance
